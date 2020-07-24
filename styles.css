@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.continer{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.sitenav__header{
+    height: 190px;
+    padding-bottom: 30px ;
+    text-align: center;
+}
+.sitenav__header h1{
+    font-size: 70px;
+    margin-bottom: 0;
+}
+.sitenav__header p{
+    margin-top: 0;
+}
+.sitenav__menu ul{
+    display: flex;
+    list-style-type: none;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+.sitenav__menu li a{
+    width: 180px;
+    padding-left: 0;
+    padding: 22px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #aaa;
+    display: block;
+}
+/* men umumiy a ni bosiladigan qilishni bimadim */
+.sitenav__menu li:hover{
+    background-color: grey;
+}
+.sitenav__title{
+    width: 300px;
+}
+.sitenav__item{
+    display: flex;
+    justify-content:space-around;
+}
+.sitenav__title h2{
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+.sitenav__item a{
+    text-decoration: none;
+    color: #fff;
+    background-color: orange;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+article{
+    margin: 60px;
+        display: flex;
+    justify-content: center;
+}
+article a{
+    text-decoration: none;
+    color: red;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid red;
+}
+.sitenav__end{
+    height: 300px;
+    background: url('img/end.jpg') no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    padding: 10px;
+}
+button{
+    color: #fff;
+    padding: 15px;
+    background-color: red;
+    border: none;
+}
+@media(max-width:600px){
+    .continer{
+        margin: 0 auto;
+        padding: 0 10px;
+        width: 600px;
+    }
+}
+@media(max-width:600px){
+    .sitenav__header h1{
+        font-size: 25px;
+        width: 600px;
+    }
+}
+@media(max-width:600px){
+    .sitenav__header p{
+        width: 600px;
+        align-items: center;
+    }
+}
+@media(max-width:600px){
+    .sitenav__menu ul, .sitenav__item, .sitenav__end,.sitenav__article{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:300px){
+    .continer{
+        margin: 0 auto;
+        padding: 0 10px;
+        width: 300px;
+    }
+}
+@media(max-width:300px){
+    .sitenav__header h1{
+        font-size: 25px;
+        width: 300px;
+    }
+}
+@media(max-width:300px){
+    .sitenav__header p{
+        width: 300px;
+        align-items: center;
+    }
+}
+@media(max-width:300px){
+    .sitenav__menu ul, .sitenav__item, .sitenav__end,.sitenav__article{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:300px){
+    input{
+        margin: 10px 20px ;
+    }
+}
+@media(max-width:300px){
+    button{
+        margin: 0 20px ;
+    }
+}
